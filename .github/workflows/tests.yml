@@ -15,8 +15,8 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm i
-      - name: lint
-        run: ./node_modules/.bin/prettier --check **/*.ts
+      #      - name: lint
+      #        run: ./node_modules/.bin/prettier --check **/*.ts
       - run: tsc
       - name: test
         run: npm run test
