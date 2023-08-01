@@ -1,4 +1,4 @@
-import {replaceMultiple, withTempDirs} from '../src'
+import {replaceMultiple, withTempDirs} from '../src/index'
 import * as fs from 'fs';
 
 
