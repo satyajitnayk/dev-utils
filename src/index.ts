@@ -42,7 +42,8 @@ export function replaceMultiple(
     return str;
   }
   matchStrings.forEach((matchStr: string, index: number) => {
-    str = str.replace(matchStr, replacementStrings[index]);
+    const regex = new RegExp(matchStr, 'g');
+    str = str.replace(regex, replacementStrings[index]);
   })
   return str;
 }

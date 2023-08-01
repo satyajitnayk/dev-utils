@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/satyajitnayk/dev-utils-ts#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.3",
     "jest": "^29.6.2",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "ts-node": "^10.9.1"
   }
 }
