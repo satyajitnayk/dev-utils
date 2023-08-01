@@ -1,0 +1,28 @@
+{
+  "name": "dev-utils-ts",
+  "version": "1.0.0",
+  "description": "utils which are required by developers in day today work",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyajitnayk/dev-utils-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satyajitnayk/dev-utils-ts/issues"
+  },
+  "homepage": "https://github.com/satyajitnayk/dev-utils-ts#readme",
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
