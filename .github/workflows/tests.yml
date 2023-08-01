@@ -3,12 +3,12 @@ name: Node.js CI
 on: [ push, pull_request ]
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     if: github.event.pull_request.draft == false                        # run this job only if the PR is not in a draft state
     strategy:
       matrix:
-        node: [ '14', '16' ]
+        node: [ '16' ]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
