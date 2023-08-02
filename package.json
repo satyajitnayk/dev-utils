@@ -1,6 +1,6 @@
 {
   "name": "dev-utils-ts",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "utils which are required by developers in day today work",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
