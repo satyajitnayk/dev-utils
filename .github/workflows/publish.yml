@@ -12,7 +12,14 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
+
+      - name: update_version
+        run: |
+          # update version in package.json with release version
+          sed -i 's/"version": "1.0.0"/"version": "'$VERSION'"/g' package.json
+
       - run: npm ci
+      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

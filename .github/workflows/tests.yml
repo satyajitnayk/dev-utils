@@ -18,5 +18,4 @@ jobs:
       #      - name: lint
       #        run: ./node_modules/.bin/prettier --check **/*.ts
       - run: tsc
-      - name: test
-        run: npm run test
+      - run: npm run test
